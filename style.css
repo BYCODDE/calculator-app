@@ -9,7 +9,7 @@ body {
 #h3_calc {
   color: #fff;
   text-align: center;
-  /* font-family: "League Spartan"; */
+  font-family: "League Spartan", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -61,7 +61,7 @@ body {
   box-shadow: 0px -4px 0px 0px #b3a497 inset;
   color: #434a59;
   text-align: center;
-  /* font-family: "League Spartan", sans-serif; */
+  font-family: "League Spartan", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -74,7 +74,7 @@ body {
   box-shadow: 0px -4px 0px 0px #414e73 inset;
   color: #fff;
   text-align: center;
-  /* font-family: "League Spartan", sans-serif; */
+  font-family: "League Spartan", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -101,6 +101,7 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.467px;
+  font-family: "League Spartan", sans-serif;
   box-shadow: 0px -4px 0px 0px #414e73 inset;
 }
 #red_button {
@@ -116,4 +117,5 @@ body {
   line-height: normal;
   letter-spacing: -0.467px;
   box-shadow: 0px -4px 0px 0px #93261a inset;
+  font-family: "League Spartan", sans-serif;
 }
