@@ -81,3 +81,41 @@ body {
   line-height: normal;
   letter-spacing: -0.467px;
 }
+
+.twolast_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+#blue_button2 {
+  width: 227px;
+  height: 64px;
+  border-radius: 10px;
+  background: #647198;
+  color: #fff;
+  text-align: center;
+  font-family: "League Spartan";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.467px;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+}
+#red_button {
+  width: 227px;
+  height: 64px;
+  border-radius: 10px;
+  background: #d03f2f;
+  color: #fff;
+  text-align: center;
+  font-family: "League Spartan";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.467px;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+}
