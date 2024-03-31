@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  background: #3a4663;
+  padding: 96px 450px;
+  justify-content: center;
+  align-items: center;
+}
+#h3_calc {
+  color: #fff;
+  text-align: center;
+  font-family: "League Spartan";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.533px;
+}
