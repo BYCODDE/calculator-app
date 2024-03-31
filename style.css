@@ -62,7 +62,18 @@ body {
   height: 26px;
   border-radius: 13px;
   background: #242d44;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
+/* input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* width: 20px; Set the width of the thumb */
+  /* height: 20px; Set the height of the thumb */
+  /* background: url("design/Oval.svg") no-repeat center center; Replace 'your-svg-file.svg' with the path to your SVG file */
+  /* cursor: pointer; Show pointer cursor */
+/* }  */
 
 .middle_section {
   width: 540px;
