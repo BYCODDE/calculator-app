@@ -4,6 +4,7 @@ body {
   padding: 96px 450px;
   justify-content: center;
   align-items: center;
+  font-family: "League Spartan", sans-serif !important;
 }
 #h3_calc {
   color: #fff;
@@ -14,4 +15,69 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.533px;
+}
+
+.middle_section {
+  width: 540px;
+  height: 128px;
+  border-radius: 10px;
+  background: #181f33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_h2 {
+  color: #fff;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.933px;
+  padding: 40px 32px 36px 323px;
+}
+
+.bottom_section {
+  width: 540px;
+  height: 480px;
+  border-radius: 10px;
+  background: #242d44;
+  margin-top: 24px;
+}
+.main_buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  padding: 32px;
+  place-items: center;
+}
+.main_buttons button {
+  width: 101px;
+  height: 64px;
+  border-radius: 10px;
+  background: #eae3dc;
+  box-shadow: 0px -4px 0px 0px #b3a497 inset;
+  color: #434a59;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.667px;
+}
+#blue_button {
+  border-radius: 10px;
+  background: #647198;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+  color: #fff;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.467px;
 }
