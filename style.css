@@ -6,6 +6,16 @@ body {
   align-items: center;
   font-family: "League Spartan", sans-serif !important;
 }
+.top_section {
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 436px;
+  align-items: center;
+  text-align: center;
+}
+
 #h3_calc {
   color: #fff;
   text-align: center;
@@ -15,6 +25,43 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.533px;
+}
+
+.THEME_div h4 {
+  color: #fff;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.THEME_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.THEME_filter {
+}
+
+.THEME_filter output {
+  color: #fff;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.THEME_filter input {
+  width: 71px;
+  height: 26px;
+  border-radius: 13px;
+  background: #242d44;
 }
 
 .middle_section {
