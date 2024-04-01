@@ -14,9 +14,10 @@ body {
   height: 44px;
   justify-content: center;
   align-items: center;
-  gap: 436px;
+  gap: 350px;
   align-items: center;
   text-align: center;
+  margin-bottom: 31px;
 }
 
 #h3_calc {
@@ -27,6 +28,12 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.533px;
+}
+.THEME_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
 .THEME_div h4 {
@@ -39,25 +46,29 @@ body {
   letter-spacing: 1px;
 }
 
-.THEME_div {
+.THEME_filter {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.THEME_filter {
+  position: relative;
 }
 
 .THEME_filter output {
   color: #fff;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  position: absolute;
+  margin-bottom: 50px;
+  gap: 21px;
+  display: flex;
 }
 
 .THEME_filter input {
+  padding: 0 5px 0 5px;
+
   width: 71px;
   height: 26px;
   border-radius: 13px;
@@ -67,13 +78,15 @@ body {
   appearance: none;
 }
 
-/* input[type="range"]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
+  z-index: 1 !important;
   -webkit-appearance: none;
-  /* width: 20px; Set the width of the thumb */
-/* height: 20px; Set the height of the thumb */
-/* background: url("design/Oval.svg") no-repeat center center; Replace 'your-svg-file.svg' with the path to your SVG file */
-/* cursor: pointer; Show pointer cursor */
-/* }  */
+  width: 16px;
+  height: 16px;
+  background: url("design/Oval.svg") no-repeat center center;
+  cursor: pointer;
+  padding: 0 5px 0 5px;
+}
 
 .middle_section {
   width: 540px;
@@ -92,7 +105,7 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.933px;
-  padding: 40px 32px 36px 323px;
+  padding: 40px 32px 36px 470px;
 }
 
 .bottom_section {
