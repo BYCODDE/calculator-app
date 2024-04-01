@@ -206,6 +206,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
 #red_button:hover {
   background: #f96b5b;
 }
+.main_buttons button:hover {
+  background: #fffffe;
+}
 
 .level1 {
   background-color: rgb(230, 230, 230);
@@ -245,3 +248,18 @@ input[type="range"]::-webkit-slider-thumb:hover {
   background: #c85402;
   box-shadow: 0px -4px 0px 0px #873901 inset;
 }
+.level1 #blue_button:hover,
+#blue_button2:hover {
+  background: #62b5bc;
+}
+
+.level1 [type="range"]::-webkit-slider-thumb:hover {
+  background: #ff8a38;
+  border-radius: 50%;
+}
+.level1 #red_button:hover {
+  background: #ff8a38;
+}
+.level1 .main_buttons button:hover {
+  background: #FFF;
+} 
