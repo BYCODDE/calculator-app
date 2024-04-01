@@ -1,3 +1,5 @@
+const body = document.querySelector("body");
+
 const h2Display = document.getElementById("main_h2");
 const main_buttons = document.querySelectorAll(".main_buttons button ");
 const resetButton = document.getElementById("blue_button2");
@@ -27,25 +29,32 @@ const THEME_filter = document.querySelector(".THEME_filter output ");
 const THEME_filter2 = document.querySelector(".THEME_filter input");
 myRange.addEventListener("input", function () {
   if (myRange.value === "1") {
-    document.body.style.backgroundColor = "rgb(230, 230, 230)";
-    top_Section.style.backgroundColor = "rgb(230, 230, 230)";
-    middle_section.style.backgroundColor = "rgb(238, 238, 238)";
-    bottom_section.style.backgroundColor = "rgba(210, 205, 205, 1)";
-    h3_calc.style.color = "rgba(54, 54, 44, 1)";
-    THEME_div.style.color = "rgba(54, 54, 44, 1)";
-    THEME_filter.style.color = "rgba(54, 54, 44, 1)";
-    THEME_filter2.style.backgroundColor = "rgba(210, 205, 205, 1)";
-    h2Display.style.color = "rgba(54, 54, 44, 1)";
-    buttons.style.color = "rgba(54, 54, 44, 1)";
-  } else {
-    document.body.style.backgroundColor = "";
-    top_Section.style.backgroundColor = "";
-    middle_section.style.backgroundColor = "";
-    bottom_section.style.backgroundColor = "";
-    h3_calc.style.color = "";
-    THEME_div.style.color = "";
-    THEME_filter.style.color = "";
-    THEME_filter2.style.backgroundColor = "";
-    h2Display.style.color = "";
+    body.classList.add("level1");
+    // document.body.style.backgroundColor = "rgb(230, 230, 230)";
+    // top_Section.style.backgroundColor = "rgb(230, 230, 230)";
+    // middle_section.style.backgroundColor = "rgb(238, 238, 238)";
+    // bottom_section.style.backgroundColor = "rgba(210, 205, 205, 1)";
+    // h3_calc.style.color = "rgba(54, 54, 44, 1)";
+    // THEME_div.style.color = "rgba(54, 54, 44, 1)";
+    // THEME_filter.style.color = "rgba(54, 54, 44, 1)";
+    // THEME_filter2.style.backgroundColor = "rgba(210, 205, 205, 1)";
+    // h2Display.style.color = "rgba(54, 54, 44, 1)";
+    // buttons.style.color = "rgba(54, 54, 44, 1)";
+  } else if (myRange.value === "2") {
+    body.classList.remove("level1");
+    body.classList.add("level2");
+    // document.body.style.backgroundColor = "";
+    // top_Section.style.backgroundColor = "";
+    // middle_section.style.backgroundColor = "";
+    // bottom_section.style.backgroundColor = "";
+    // h3_calc.style.color = "";
+    // THEME_div.style.color = "";
+    // THEME_filter.style.color = "";
+    // THEME_filter2.style.backgroundColor = "";
+    // h2Display.style.color = "";
+  }
+  else{
+    body.classList.remove("level1")
+    body.classList.remove("level2")
   }
 });

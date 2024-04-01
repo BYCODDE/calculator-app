@@ -193,3 +193,42 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0px -4px 0px 0px #93261a inset;
   font-family: "League Spartan", sans-serif;
 }
+
+.level1 {
+  background-color: rgb(230, 230, 230);
+}
+
+.level1 .middle_section {
+  background-color: rgb(238, 238, 238);
+}
+
+.level1 .bottom_section {
+  background-color: rgba(210, 205, 205, 1);
+}
+
+.level1 .THEME_div h4,
+.level1 .THEME_filter output p,
+.level1 #h3_calc,
+.level1 #main_h2 {
+  color: rgba(54, 54, 44, 1);
+}
+
+.level1 #myRange {
+  background: rgba(210, 205, 205, 1);
+}
+
+.level1 .main_buttons button {
+  color: rgba(54, 54, 44, 1);
+  background: #e5e4e1;
+  box-shadow: 0px -4px 0px 0px #a79e91 inset;
+}
+
+.level1 #blue_button,
+.level1 #blue_button2 {
+  background: #378187;
+  box-shadow: 0px -4px 0px 0px #1b6066 inset;
+}
+.level1 #red_button {
+  background: #c85402;
+  box-shadow: 0px -4px 0px 0px #873901 inset;
+}
