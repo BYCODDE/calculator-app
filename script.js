@@ -44,25 +44,11 @@ Equality.addEventListener("click", function () {
   if (h2Display.textContent.length >= 2 && sumNumber.textContent === "+") {
     const mainSplit = Number(h2Display.textContent) + Number(firstInput);
     h2Display.textContent = mainSplit;
-  } else if (
-    h2Display.textContent.length >= 2 &&
-    Subtract.textContent === "-"
-  ) {
-    const mainSplit2 = Number(h2Display.textContent) - Number(firstInput);
-    console.log(mainSplit2);
-    h2Display.textContent = mainSplit2;
   }
 });
 
 sumNumber.addEventListener("click", function () {
   if (h2Display.textContent.length >= 2 && sumNumber.textContent === "+") {
-    firstInput = h2Display.textContent;
-    h2Display.textContent = "";
-  }
-});
-
-Subtract.addEventListener("click", function () {
-  if (h2Display.textContent.length >= 2 && Subtract.textContent === "-") {
     firstInput = h2Display.textContent;
     h2Display.textContent = "";
   }
