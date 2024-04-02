@@ -41,25 +41,25 @@ delButton.addEventListener("click", () => {
 const buttons = main_buttons.forEach((button) => {
   button.addEventListener("click", function () {
     if (button.textContent === "7") {
-      h2Display.textContent = +7;
+      h2Display.textContent = Number(h2Display.textContent + 7);
     } else if (button.textContent === "8") {
-      h2Display.textContent = +8;
+      h2Display.textContent = Number(h2Display.textContent + 8);
     } else if (button.textContent === "9") {
-      h2Display.textContent = +9;
-    }else if (button.textContent === "4") {
-      h2Display.textContent = +4;
-    }else if (button.textContent === "5") {
-      h2Display.textContent = +5;
-    }else if (button.textContent === "6") {
-      h2Display.textContent = +6;
-    }else if (button.textContent === "1") {
-      h2Display.textContent = +1;
-    }else if (button.textContent === "2") {
-      h2Display.textContent = +2;
-    }else if (button.textContent === "3") {
-      h2Display.textContent = +3;
-    }else if (button.textContent === "0") {
-      h2Display.textContent = +0;
+      h2Display.textContent = Number(h2Display.textContent + 9);
+    } else if (button.textContent === "4") {
+      h2Display.textContent = Number(h2Display.textContent + 4);
+    } else if (button.textContent === "5") {
+      h2Display.textContent = Number(h2Display.textContent + 5);
+    } else if (button.textContent === "6") {
+      h2Display.textContent = Number(h2Display.textContent + 6);
+    } else if (button.textContent === "1") {
+      h2Display.textContent = Number(h2Display.textContent + 1);
+    } else if (button.textContent === "2") {
+      h2Display.textContent = Number(h2Display.textContent + 2);
+    } else if (button.textContent === "3") {
+      h2Display.textContent = Number(h2Display.textContent + 3);
+    } else if (button.textContent === "0") {
+      h2Display.textContent = Number(h2Display.textContent + 0);
     }
   });
   console.log(button);
