@@ -22,8 +22,6 @@ myRange.addEventListener("input", function () {
   }
 });
 
-/* FIXME:RESET button hover needs to be fixed and classname logic should be checked again! */
-
 //BUTTON LOGIC!
 let firstInput;
 resetButton.addEventListener("click", () => {
@@ -46,12 +44,13 @@ Equality.addEventListener("click", function () {
   if (h2Display.textContent.length >= 2 && sumNumber.textContent === "+") {
     const mainSplit = Number(h2Display.textContent) + Number(firstInput);
     h2Display.textContent = mainSplit;
-  }
-  else if(h2Display.textContent.length >= 2 && Subtract.textContent === "-"){
+  } else if (
+    h2Display.textContent.length >= 2 &&
+    Subtract.textContent === "-"
+  ) {
     const mainSplit2 = Number(h2Display.textContent) - Number(firstInput);
     console.log(mainSplit2);
     h2Display.textContent = mainSplit2;
-
   }
 });
 
@@ -68,3 +67,5 @@ Subtract.addEventListener("click", function () {
     h2Display.textContent = "";
   }
 });
+
+// TODO: ორზე მეტი,რომ არის მარტო მაშინ მუშაობს შეკრება და დანარჩენი ვერ გავაკეთე თავიდან არის გასანაალიზებელი!
