@@ -1,14 +1,12 @@
 const body = document.querySelector("body");
-
 const myRange = document.getElementById("myRange");
-const top_Section = document.querySelector(".top_section");
-const middle_section = document.querySelector(".middle_section");
-const bottom_section = document.querySelector(".bottom_section");
+const h2Display = document.getElementById("main_h2");
+const main_buttons = document.querySelectorAll(".main_buttons button ");
+const resetButton = document.getElementById("blue_button2");
+const delButton = document.getElementById("blue_button");
+const addNumber = document.getElementById("+");
+const sum = document.getElementById("red_button");
 
-const h3_calc = document.getElementById("h3_calc");
-const THEME_div = document.querySelector(".THEME_div h4");
-const THEME_filter = document.querySelector(".THEME_filter output ");
-const THEME_filter2 = document.querySelector(".THEME_filter input");
 myRange.addEventListener("input", function () {
   if (myRange.value === "1") {
     body.classList.add("level1");
@@ -24,12 +22,7 @@ myRange.addEventListener("input", function () {
 /* FIXME:RESET button hover needs to be fixed and classname logic should be checked again! */
 
 //BUTTON LOGIC!
-const h2Display = document.getElementById("main_h2");
-const main_buttons = document.querySelectorAll(".main_buttons button ");
-const resetButton = document.getElementById("blue_button2");
-const delButton = document.getElementById("blue_button");
-// let number = 0;
-// let convert = Number((h2Display.textContent = number));
+let firstInput;
 resetButton.addEventListener("click", () => {
   h2Display.textContent = "";
 });
@@ -38,41 +31,24 @@ delButton.addEventListener("click", () => {
   h2Display.textContent = h2Display.textContent.slice(0, -1);
 });
 
-const buttons = main_buttons.forEach((button) => {
+main_buttons.forEach((button) => {
   button.addEventListener("click", function () {
     const buttonText = button.textContent;
-    // if (button.textContent === "7") {
-    //   h2Display.textContent = Number(h2Display.textContent + 7);
-    // } else if (button.textContent === "8") {
-    //   h2Display.textContent = Number(h2Display.textContent + 8);
-    // } else if (button.textContent === "9") {
-    //   h2Display.textContent = Number(h2Display.textContent + 9);
-    // } else if (button.textContent === "4") {
-    //   h2Display.textContent = Number(h2Display.textContent + 4);
-    // } else if (button.textContent === "5") {
-    //   h2Display.textContent = Number(h2Display.textContent + 5);
-    // } else if (button.textContent === "6") {
-    //   h2Display.textContent = Number(h2Display.textContent + 6);
-    // } else if (button.textContent === "1") {
-    //   h2Display.textContent = Number(h2Display.textContent + 1);
-    // } else if (button.textContent === "2") {
-    //   h2Display.textContent = Number(h2Display.textContent + 2);
-    // } else if (button.textContent === "3") {
-    //   h2Display.textContent = Number(h2Display.textContent + 3);
-    // } else if (button.textContent === "0") {
-    //   h2Display.textContent = h2Display.textContent + "0";
-    // } else if (button.textContent === ".") {
-    //   h2Display.textContent = h2Display.textContent + ".";
-    // } else if (button.textContent === "+") {
-    //   h2Display.textContent = Number(
-    //     (h2Display.textContent += button.textContent)
-    //   );
-    // }
-
     if (!isNaN(parseFloat(buttonText)) || buttonText === ".") {
-      h2Display.textContent += buttonText;
-    } else if (buttonText === "+") {
       h2Display.textContent += buttonText;
     }
   });
+});
+sum.addEventListener("click", function () {
+  if (h2Display.textContent.length >= 2 && addNumber.textContent === "+") {
+    const mainSplit = Number(h2Display.textContent) + Number(firstInput);
+    h2Display.textContent = mainSplit;
+  }
+});
+
+addNumber.addEventListener("click", function () {
+  if (h2Display.textContent.length >= 2 && addNumber.textContent === "+") {
+    firstInput = h2Display.textContent;
+    h2Display.textContent = "";
+  }
 });
