@@ -248,8 +248,10 @@ input[type="range"]::-webkit-slider-thumb:hover {
   background: #c85402;
   box-shadow: 0px -4px 0px 0px #873901 inset;
 }
-.level1 #blue_button:hover,
-#blue_button2:hover {
+.level1 #blue_button:hover {
+  background: #62b5bc;
+}
+.level1 #blue_button2:hover {
   background: #62b5bc;
 }
 
@@ -303,8 +305,11 @@ input[type="range"]::-webkit-slider-thumb:hover {
   background: #00ded0;
 }
 
-.level2 #blue_button:hover,
-#blue_button2:hover {
+.level2 #blue_button:hover {
+  background: #8631af;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+}
+.level2 #blue_button2:hover {
   background: #8631af;
   box-shadow: 0px -4px 0px 0px #be15f4 inset;
 }
@@ -321,6 +326,5 @@ input[type="range"]::-webkit-slider-thumb:hover {
   background: #93fff8;
   /* border-radius: 50%; */
 }
-
 
 /* FIXME:RESET button hover needs to be fixed and classname logic should me checked again! */
