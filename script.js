@@ -21,7 +21,6 @@ myRange.addEventListener("input", function () {
   }
 });
 
-//BUTTON LOGIC!
 let firstInput;
 let secondInput;
 let thirdInput;
@@ -56,7 +55,15 @@ Equality.addEventListener("click", function () {
     h2Display.textContent = mainSplit2;
   }
   // TODO:  გამრავლების  ლოგიკა და გატოლების ლოგიკა
-  else if (selectedOperation === "*") {
+  else if (
+    (selectedOperation === "*" && thirdInput.textContent === "0") ||
+    (selectedOperation === "*" && h2Display.textContent === "0")
+  ) {
+    h2Display.textContent = "";
+    setTimeout(() => {
+      h2Display.textContent = "0";
+    }, 200);
+  } else if (selectedOperation === "*") {
     const mainSplit3 = Number(thirdInput) * Number(h2Display.textContent);
     h2Display.textContent = mainSplit3;
   }
@@ -65,7 +72,6 @@ Equality.addEventListener("click", function () {
     (selectedOperation === "/" && forthInput.textContent === "0") ||
     (selectedOperation === "/" && h2Display.textContent === "0")
   ) {
-    console.log("fefw");
     h2Display.textContent = "";
     setTimeout(() => {
       h2Display.textContent = "0";
