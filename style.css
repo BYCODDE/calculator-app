@@ -324,7 +324,47 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 .level2 [type="range"]::-webkit-slider-thumb:hover {
   background: #93fff8;
-  /* border-radius: 50%; */
 }
 
-/* FIXME:RESET button hover needs to be fixed and classname logic should me checked again! */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 30px 24px 31px 24px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .top_section {
+    gap: 130px;
+  }
+
+  .middle_section {
+    width: 327px;
+    height: 88px;
+  }
+  #main_h2 {
+    font-size: 40px;
+    padding: 29px 24px 22px 270px;
+  }
+  .bottom_section {
+    width: 327px;
+    height: 465px;
+  }
+  .main_buttons {
+    grid-column-gap: 12px;
+    padding: 24px;
+  }
+  .main_buttons button {
+    width: 60px;
+  }
+  .twolast_buttons {
+    gap: 13px;
+  }
+  #blue_button2,
+  #red_button {
+    width: 133px;
+    height: 64px;
+  }
+}
