@@ -94,8 +94,9 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 10px;
   background: #181f33;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-end;
+  text-align: right;
 }
 
 #main_h2 {
@@ -368,3 +369,5 @@ input[type="range"]::-webkit-slider-thumb:hover {
     height: 64px;
   }
 }
+
+/* FIXME:styles done when typing is problem amd remove repeated styles! */
