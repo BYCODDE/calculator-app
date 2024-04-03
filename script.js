@@ -61,7 +61,16 @@ Equality.addEventListener("click", function () {
     h2Display.textContent = mainSplit3;
   }
   // TODO:  გაყოფის   ლოგიკა და გატოლების ლოგიკა
-  else if (selectedOperation === "/") {
+  else if (
+    (selectedOperation === "/" && forthInput.textContent === "0") ||
+    (selectedOperation === "/" && h2Display.textContent === "0")
+  ) {
+    console.log("fefw");
+    h2Display.textContent = "";
+    setTimeout(() => {
+      h2Display.textContent = "0";
+    }, 200);
+  } else if (selectedOperation === "/") {
     const mainSplit4 = Number(forthInput) / Number(h2Display.textContent);
     h2Display.textContent = mainSplit4;
   }
@@ -96,5 +105,6 @@ Multiply.addEventListener("click", function () {
 Divide.addEventListener("click", function () {
   selectedOperation = "/";
   forthInput = h2Display.textContent;
+  console.log(typeof forthInput);
   h2Display.textContent = "";
 });
