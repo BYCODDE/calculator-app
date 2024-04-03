@@ -9,7 +9,6 @@ const Equality = document.getElementById("red_button");
 const Subtract = document.getElementById("-");
 const Divide = document.getElementById("/");
 const Multiply = document.getElementById("x");
-console.log(Subtract, Divide, Multiply);
 myRange.addEventListener("input", function () {
   if (myRange.value === "1") {
     body.classList.add("level1");
@@ -24,7 +23,10 @@ myRange.addEventListener("input", function () {
 
 //BUTTON LOGIC!
 let firstInput;
-
+let secondInput;
+let thirdInput;
+let forthInput;
+let selectedOperation = "";
 resetButton.addEventListener("click", () => {
   h2Display.textContent = "";
 });
@@ -41,19 +43,58 @@ main_buttons.forEach((button) => {
     }
   });
 });
+// TODO:  შეკრების და გატოლების ლოგიკა
 Equality.addEventListener("click", function () {
-  if (sumNumber.textContent === "+") {
+  if (selectedOperation === "+") {
     const mainSplit = Number(h2Display.textContent) + Number(firstInput);
     console.log(mainSplit);
     h2Display.textContent = mainSplit;
+  } // TODO:  გამოკლების და გატოლების ლოგიკა
+  else if (selectedOperation === "-") {
+    const mainSplit2 = Number(secondInput) - Number(h2Display.textContent);
+    console.log(mainSplit2);
+    h2Display.textContent = mainSplit2;
+  }
+  // TODO:  გამრავლების  ლოგიკა და გატოლების ლოგიკა
+  else if (selectedOperation === "*") {
+    const mainSplit3 = Number(thirdInput) * Number(h2Display.textContent);
+    h2Display.textContent = mainSplit3;
+  }
+  // TODO:  გაყოფის   ლოგიკა და გატოლების ლოგიკა
+  else if (selectedOperation === "/") {
+    const mainSplit4 = Number(forthInput) / Number(h2Display.textContent);
+    h2Display.textContent = mainSplit4;
   }
 });
+
+// TODO:  შეკრების  ლოგიკა
 
 sumNumber.addEventListener("click", function () {
-  if (sumNumber.textContent === "+") {
-    firstInput = h2Display.textContent;
-    h2Display.textContent = "";
-  }
+  selectedOperation = "+";
+  firstInput = h2Display.textContent;
+  h2Display.textContent = "";
 });
 
-// TODO: ორზე მეტი,რომ არის მარტო მაშინ მუშაობს შეკრება და დანარჩენი ვერ გავაკეთე თავიდან არის გასანაალიზებელი!
+// TODO:  გამოკლების  ლოგიკა
+
+Subtract.addEventListener("click", function () {
+  selectedOperation = "-";
+  secondInput = h2Display.textContent;
+  h2Display.textContent = "";
+});
+
+// TODO:  გამრავლების  ლოგიკა
+
+Multiply.addEventListener("click", function () {
+  selectedOperation = "*";
+  thirdInput = h2Display.textContent;
+  h2Display.textContent = "";
+});
+
+// TODO:  გაყოფის   ლოგიკა
+
+Divide.addEventListener("click", function () {
+  selectedOperation = "/";
+  forthInput = h2Display.textContent;
+  h2Display.textContent = "";
+});
