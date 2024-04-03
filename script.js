@@ -46,12 +46,10 @@ main_buttons.forEach((button) => {
 Equality.addEventListener("click", function () {
   if (selectedOperation === "+") {
     const mainSplit = Number(h2Display.textContent) + Number(firstInput);
-    console.log(mainSplit);
     h2Display.textContent = mainSplit;
   } // TODO:  გამოკლების და გატოლების ლოგიკა
   else if (selectedOperation === "-") {
     const mainSplit2 = Number(secondInput) - Number(h2Display.textContent);
-    console.log(mainSplit2);
     h2Display.textContent = mainSplit2;
   }
   // TODO:  გამრავლების  ლოგიკა და გატოლების ლოგიკა
@@ -111,6 +109,5 @@ Multiply.addEventListener("click", function () {
 Divide.addEventListener("click", function () {
   selectedOperation = "/";
   forthInput = h2Display.textContent;
-  console.log(typeof forthInput);
   h2Display.textContent = "";
 });
