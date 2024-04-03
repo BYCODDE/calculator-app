@@ -12,6 +12,7 @@ const Multiply = document.getElementById("x");
 myRange.addEventListener("input", function () {
   if (myRange.value === "1") {
     body.classList.add("level1");
+    body.classList.remove("level2");
   } else if (myRange.value === "2") {
     body.classList.remove("level1");
     body.classList.add("level2");
