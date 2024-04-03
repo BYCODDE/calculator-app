@@ -24,6 +24,7 @@ myRange.addEventListener("input", function () {
 
 //BUTTON LOGIC!
 let firstInput;
+
 resetButton.addEventListener("click", () => {
   h2Display.textContent = "";
 });
@@ -41,14 +42,15 @@ main_buttons.forEach((button) => {
   });
 });
 Equality.addEventListener("click", function () {
-  if (h2Display.textContent.length >= 2 && sumNumber.textContent === "+") {
+  if (sumNumber.textContent === "+") {
     const mainSplit = Number(h2Display.textContent) + Number(firstInput);
+    console.log(mainSplit);
     h2Display.textContent = mainSplit;
   }
 });
 
 sumNumber.addEventListener("click", function () {
-  if (h2Display.textContent.length >= 2 && sumNumber.textContent === "+") {
+  if (sumNumber.textContent === "+") {
     firstInput = h2Display.textContent;
     h2Display.textContent = "";
   }
