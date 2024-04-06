@@ -8,6 +8,7 @@ body {
   padding: 96px 450px;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .top_section {
   display: flex;
